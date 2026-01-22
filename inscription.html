@@ -2,152 +2,36 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Formulaire de Candidature – CAP Jeunesse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de Candidature - CAP Jeunesse</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
 
-    <div class="logo-container">
-        <img src="images/logo.png" alt="Logo CAP Jeunesse" class="logo">
-    </div>
-
     <h1>Formulaire de Candidature</h1>
+
     <p><strong>Formation :</strong> CAP JEUNESSE IA, DRONES & CITOYENNETÉ NUMÉRIQUE</p>
     <p><strong>Session :</strong> Janvier 2026 – Moundou, Logone Occidental</p>
 
-    <form action="https://formspree.io/f/xlggkdry" method="POST" id="formulaire">
-        <input type="hidden" name="_subject" value="Nouvelle candidature – CAP Jeunesse 2026">
-        <input type="hidden" name="_template" value="table">
+    <p style="margin-top:20px;">
+        Pour soumettre votre candidature, veuillez cliquer sur le bouton ci-dessous :
+    </p>
 
-        <!-- I. Informations Personnelles -->
-        <fieldset>
-            <legend>I. Informations Personnelles</legend>
-            <label>Nom et Prénoms</label>
-            <input type="text" name="nom" required>
+    <a href="https://forms.gle/XPAZRWuiN7euAFeVA"
+       target="_blank"
+       class="btn">
+        Accéder au formulaire de candidature
+    </a>
 
-            <label>Sexe</label>
-            <div class="radio-group">
-                <label><input type="radio" name="sexe" value="Masculin" required> Masculin</label>
-                <label><input type="radio" name="sexe" value="Féminin"> Féminin</label>
-            </div>
-
-            <label>Date de naissance</label>
-            <input type="date" name="dob" required>
-
-            <label>Lieu de résidence</label>
-            <input type="text" name="lieu" required>
-
-            <label>Numéro WhatsApp</label>
-            <input type="tel" name="tel" required>
-
-            <label>Adresse e-mail</label>
-            <input type="email" name="email" required>
-
-            <label>Niveau d'études</label>
-            <select name="niveau" required>
-                <option value="">-- Sélectionnez --</option>
-                <option>BEPC</option>
-                <option>BAC</option>
-                <option>Licence</option>
-                <option>Master</option>
-                <option>Autre</option>
-            </select>
-        </fieldset>
-
-        <!-- II. Profil Associatif et Professionnel -->
-        <fieldset>
-            <legend>II. Profil Associatif et Professionnel</legend>
-            <label>Membre d’une association ?</label>
-            <div class="radio-group">
-                <label><input type="radio" name="membre_assoc" value="Oui" required> Oui</label>
-                <label><input type="radio" name="membre_assoc" value="Non"> Non</label>
-            </div>
-
-            <label>Si oui, laquelle ?</label>
-            <input type="text" name="association">
-
-            <label>Activité principale</label>
-            <div class="radio-group">
-                <label><input type="radio" name="activite" value="Étudiant" required> Étudiant</label>
-                <label><input type="radio" name="activite" value="Entrepreneur"> Entrepreneur</label>
-                <label><input type="radio" name="activite" value="Recherche d'emploi"> En recherche d'emploi</label>
-                <label><input type="radio" name="activite" value="Autre"> Autre</label>
-            </div>
-        </fieldset>
-
-        <!-- III. Compétences et Équipements -->
-        <fieldset>
-            <legend>III. Compétences et Équipements</legend>
-            <label>Outils disponibles</label>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="outil[]" value="Smartphone"> Smartphone</label>
-                <label><input type="checkbox" name="outil[]" value="Ordinateur"> Ordinateur</label>
-                <label><input type="checkbox" name="outil[]" value="Aucun"> Aucun</label>
-            </div>
-
-            <label>Niveau numérique</label>
-            <select name="niveau_num" required>
-                <option value="">-- Sélectionnez --</option>
-                <option>Débutant</option>
-                <option>Intermédiaire</option>
-                <option>Avancé</option>
-            </select>
-
-            <label>A déjà utilisé une IA ?</label>
-            <div class="radio-group">
-                <label><input type="radio" name="ai" value="Oui" required> Oui</label>
-                <label><input type="radio" name="ai" value="Non"> Non</label>
-            </div>
-        </fieldset>
-
-        <!-- IV. Motivations -->
-        <fieldset>
-            <legend>IV. Motivations</legend>
-            <label>Pourquoi cette formation ?</label>
-            <textarea name="motivation" rows="3" required></textarea>
-
-            <label>Impact pour la communauté</label>
-            <textarea name="utilisation" rows="3" required></textarea>
-        </fieldset>
-
-        <!-- Autorisation image -->
-        <fieldset>
-            <legend>Autorisation d’utilisation de l’image</legend>
-            <div class="radio-group">
-                <label><input type="radio" name="autorisation_image" value="Oui" required> Oui</label>
-                <label><input type="radio" name="autorisation_image" value="Non"> Non</label>
-            </div>
-        </fieldset>
-
-        <!-- V. Engagement du candidat -->
-        <fieldset>
-            <legend>V. Engagement du candidat</legend>
-            <p>
-                Je soussigné(e),
-                <input type="text" name="signature" required>,
-                certifie l'exactitude des informations.
-            </p>
-            <p>
-                Fait à
-                <input type="text" name="lieu_fait" required>,
-                le
-                <input type="date" name="date_fait" required>
-            </p>
-        </fieldset>
-
-        <p class="note">
-            Les candidatures féminines et des personnes en situation de handicap sont vivement encouragées.<br>
-            <strong>Date limite :</strong> 22 janvier 2026
-        </p>
-
-        <button type="submit">Soumettre ma candidature</button>
-    </form>
+    <p style="margin-top:25px; font-size:14px;">
+        📌 Les candidatures féminines et des personnes en situation de handicap sont vivement encouragées.<br>
+        <strong>Date limite :</strong> 25 janvier 2026
+    </p>
 
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
+
